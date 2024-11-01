@@ -6,17 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "migrate": "knex migrate:latest --knexfile knexfile.js"
   },
   "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "formidable": "^3.5.2",
+    "jotform": "^1.0.1",
+    "knex": "^3.1.0",
+    "next": "15.0.2",
+    "node-cron": "^3.0.3",
+    "pg": "^8.13.1",
     "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "next": "15.0.2"
+    "react-dom": "19.0.0-rc-02c0e824-20241028"
   },
   "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "15.0.2",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.2"
+    "webpack": "^5.96.1",
+    "webpack-node-externals": "^3.0.0"
   }
 }
